@@ -116,3 +116,19 @@ ul{
   flex-basis: 250px;
   margin-bottom: 20px;
 }
+
+/* =================================== LOCATION =========================== */
+
+.location-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.location-item{
+  flex: 1 0 33.33%;
+
+}
+
+.card:not(:nth-child(3n)){
+
+}
