@@ -24,11 +24,12 @@
 
 html{
   font-family: Muller;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 *{
   box-sizing: border-box;
+  margin: 0;
 }
 
 body{
@@ -38,6 +39,7 @@ body{
 
 a{
   text-decoration: none;
+  color: #CC9933;
 }
 
 ul{
@@ -140,6 +142,7 @@ color: #666666;
 .spetial-text{
   margin-top: 70px;
   margin-left: 40px;
+  margin-bottom: 20px;
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
@@ -258,19 +261,91 @@ color: #666666;
   opacity: 0.8;
 }
 
+/* =============================== ABOUT US ============================== */
+
+.aboutus-text{
+  max-width: 888px;
+  line-height: 200%;
+  color: #000;
+
+}
+
+
 /* =============================== SERVICE ============================= */
 
 
 .services-list{
   display: flex;
   flex-wrap: wrap;
+
 }
 
 .services-item{
-  flex-basis: 50%;
+  display: flex;
+  flex: 1 1 45%;
+  border-radius: 15px 15px 0px 0px;
+  background: url(../img/service1.jpg) top center no-repeat;
+  background-size: contain;
+  align-items: stretch;
+}
+
+.services-item:not(:nth-child(2n)){
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+.services-item:nth-child(2){
+  background-image: url(../img/service2.jpg);
+  margin-bottom: 24px;
+
+}
+
+.services-item:nth-child(3){
+  background-image: url(../img/service3.jpg);
+}
+
+.services-item:nth-child(4){
+  background-image: url(../img/service4.jpg);
+  margin-bottom: 24px;
+}
+
+.services-card{
+  margin-top: 165px;
+  padding-top: 26px;
+  padding-left: 45px;
+  /* max-height: 165px; */
+  min-width: 573px;
+  border-radius: 0 0 15px 15px;
+  background-color: #fff;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.arrow3{
+  display: inline-block;
+  /* background-position: center center; */
+  background-image: url(../img/arrow2.png);
+  padding-left: 18px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  transform: translateY(2px);
+}
+
+.services-item p{
+  padding-bottom: 25px;
+  max-width: 402px;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000;
 }
 
 /* ================================= ADVANTAGES ============================== */
+
+.text-advantages{
+  margin-top: 66px;
+}
 
 .advantages-list{
   display: flex;
