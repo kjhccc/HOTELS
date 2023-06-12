@@ -411,6 +411,58 @@
         </ul>
       </div>
     </section>  <!--Карточки location-item нужно размножить, солько нужно-->
+    <section class="section-forma">
+      <div class="container container-forma">
+        <h1 class="spetial-text spetial-text-forma">
+          Хочу тур
+        </h1>
+        <form class="forma" action="https://jsonplaceholder.typicode.com/posts" autocomplete method="post">
+          <fieldset class="fieldset">
+          <div class="lable-select">
+            <label class="lable-city" for="city-select">Город вылета</label>
+            <select class="select-city" name="city" id="city-select">
+              <option>-Выберети город-</option>
+              <option>Москва</option>
+              <option>Санкт-Петербург</option>
+              <option>Самара</option>
+            </select>
+          </div>
+
+          <div class="lable-select">
+            <label class="lable-country" for="country-select">Страна</label>
+            <select class="select-country" name="country" id="country-select">
+              <option>-Выберети страну-</option>
+              <option>Австралия</option>
+              <option>Россия</option>
+              <option>Армения</option>
+            </select>
+          </div>
+
+          <div class="lable-select-input">
+            <label class="lable-date" for="date-select">Дата прибытия</label>
+            <input type="date" id="date-select" name="date" placeholder>
+          </div>
+
+          <div class="lable-select-input">
+            <label class="lable-number" for="nights-select">Ночей</label>
+            <input class="border" type="number" id="nights-select" name="nights" required>
+          </div>
+
+          <div class="lable-select-input">
+            <label class="lable-turist" for="turist-select">Туристы</label>
+            <input class="border" type="number" id="turist-select" name="turist" required>
+          </div>
+
+          <div class="lable-select-btn">
+            <button class="btn btn-form" type="submit">
+              Найти
+            </button>
+          </div>
+
+          </fieldset>
+        </form>
+      </div>
+    </section>
   </main>
 </body>
 </html>
