@@ -25,6 +25,7 @@
 html{
   font-family: Muller;
   font-weight: 400;
+  font-size: 16px;
 }
 
 *{
@@ -279,7 +280,10 @@ color: #666666;
 .services-list{
   display: flex;
   flex-wrap: wrap;
+}
 
+.services-list a{
+  font-weight: 500;
 }
 
 .services-item{
@@ -663,3 +667,78 @@ option{
   height: 528px;
   margin-left: 59px;
 }
+
+/*================== FOOTER==================== */
+
+.footer-container{
+  display: flex;
+  padding: 45px;
+  margin-bottom: 25px;
+  background-color: #333333;
+  background-image: url(../img/logoSUN.png);
+  background-repeat: no-repeat;
+  background-position: 738px 100%;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.9rem;
+}
+
+.footer-content{
+  max-width: 400px;
+}
+
+.footer__text{
+  margin-right: 30px;
+}
+
+.footer__adres{
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+
+.copyright{
+  margin-bottom: 37px;
+}
+
+.spravka{
+  margin-bottom: 40px;
+  width: 302px;
+  font-weight: 300;
+}
+
+.tel-footer{
+  margin-bottom: 15px;
+}
+
+.fact-adres{
+  margin-bottom: 15px;
+}
+
+.sova{
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 45px;
+  background: url(../img/sova.svg) center center no-repeat transparent;
+  background-size: contain;
+}
+
+.ok{
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 45px;
+  background: url(../img/ok.svg) center center no-repeat transparent;
+  background-size: contain;
+}
+
+.vk{
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url(../img/vk.svg) center center no-repeat transparent;
+  background-size: contain;
+}
+
