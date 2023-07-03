@@ -627,9 +627,12 @@ option{
   flex-direction: column;
 }
 
+.numbers__a{
+  margin-bottom: 10px;
+}
+
 .adres1{
-  font-weight: 400;
-  font-size: 16px;
+  line-height: 1.5rem;
 }
 
 .email{
@@ -658,6 +661,7 @@ option{
 
 .gray-text{
   color:#999999;
+  margin: 10px 0 10px;
 }
 
 .img-office{
@@ -666,6 +670,10 @@ option{
   width: 653px;
   height: 528px;
   margin-left: 59px;
+}
+
+.graph1{
+  line-height: 1.5rem;
 }
 
 /*================== FOOTER==================== */
