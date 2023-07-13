@@ -510,7 +510,7 @@ color: #666666;
   height: 17px;
   transform: translateY(2px);
 }
-/* =================f====FORM====================== */
+/* =================FORM====================== */
 
 .section-forma{
   padding: 30px;
@@ -570,6 +570,9 @@ color: #666666;
   margin-right: 41px;
 
 }
+.select-city, .select-country:hover{
+  cursor: pointer;
+}
 
 .lable-select-input{
   width: 122px;
@@ -584,6 +587,12 @@ color: #666666;
 #nights-select,
 #turist-select{
   border-bottom: 1px solid #E9E9E9;
+}
+
+#date-select,
+#nights-select,
+#turist-select:hover{
+  cursor: pointer;
 }
 
 option{
