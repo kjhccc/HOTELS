@@ -63,6 +63,14 @@ ul{
   color: #CC9933;
   background-color: transparent;
   cursor: pointer;
+  transition-property: background-color, color;
+  transition-duration: .5s;
+  transition-timing-function: ease;
+}
+
+.btn:hover{
+  background-color: #CC9933;
+  color: #E5E5E5;
 }
 
 /* =========================== HEADER =========================== */
@@ -124,13 +132,46 @@ ul{
 color: #666666;
 }
 
-.menu-list-item-left{
-  color: #666666;
+.menu__link{
+  position: relative;
+  z-index: 2;
+
 }
 
+.menu-list-item-left{
+
+
+  display: inline-block;
+  position:relative;
+  overflow: hidden;
+}
 .menu-list-item-left:not(:last-child){
   margin-right: 45px;
 }
+
+
+.menu-list-item-left:hover::before {
+    transform: none;
+}
+
+
+
+
+
+.menu__link{
+  transition: color 0.2s ease;
+}
+.menu__link:hover{
+  color:#CC9933;
+}
+
+
+
+
+
+
+
+
 
 .menu-list-right{
   display: flex;
@@ -139,6 +180,10 @@ color: #666666;
 .btn:not(:last-child){
   margin-right: 40px;
 }
+
+
+
+
 
 /* ============================== SPETIAL ============================= */
 
@@ -163,7 +208,14 @@ color: #666666;
 .left-spetial{
   margin-bottom: 24px;
 }
+.left-spetial::after{
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 
+}
 
 .left-spetial-mald-text{
   max-width: 510px;
@@ -358,20 +410,22 @@ color: #666666;
 
 .advantages-list{
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-wrap: wrap;
 }
 
 .advantages-list-item{
-  flex-basis: 276px;
+  max-width: 276px;
   min-height: 276px;
   margin-bottom: 20px;
   padding: 0 42px 32px 45px;
   background-color: #fff;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 200%;
   border-radius: 15px;
+}
+
+.advantages-list-item:not(:nth-child(4n)){
+  margin-right: 22px;
 }
 
 .img-adv{
@@ -485,13 +539,14 @@ color: #666666;
   margin: 0 0 45px 45px;
 }
 .location-item-seeall{
-  display: inline-block;
-  height: 448px;
+  height: 445.6px;
   width: 374px;
+  background-color: #000;
   background: url(../img/hotel9.jpg) center center no-repeat;
-  background-size: contain;
+  background-size: cover;
   border-radius: 15px;
-  margin-top: 24px;
+  margin-top: 20px;
+  position: relative;
 }
 .see-all{
   display: inline-block;
@@ -500,6 +555,16 @@ color: #666666;
   font-size: 20px;
   color: #fff;
 }
+
+.see-all::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
 .arrowwight{
   display: inline-block;
   background-position: center center;
